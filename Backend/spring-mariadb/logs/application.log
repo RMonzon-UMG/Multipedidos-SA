@@ -1,0 +1,12 @@
+2025-10-23 22:41:04 [main] INFO  com.multipedidos.mariadb.MariaDBApplication - Starting MariaDBApplication using Java 17.0.12 with PID 13180 (C:\Users\ronal\OneDrive\Escritorio\MultiPedidos-S.A\Backend\spring-mariadb\target\classes started by ronal in C:\Users\ronal\OneDrive\Escritorio\MultiPedidos-S.A\Backend\spring-mariadb)
+2025-10-23 22:41:04 [main] DEBUG com.multipedidos.mariadb.MariaDBApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-10-23 22:41:04 [main] INFO  com.multipedidos.mariadb.MariaDBApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-23 22:41:05 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-10-23 22:41:05 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-23 22:41:05 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-10-23 22:41:05 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-23 22:41:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-23 22:41:06 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@1760e594
+2025-10-23 22:41:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-23 22:41:07 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-10-23 22:41:07 [main] INFO  com.multipedidos.mariadb.MariaDBApplication - Started MariaDBApplication in 3.055 seconds (process running for 3.708)

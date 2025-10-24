@@ -1,0 +1,10 @@
+2025-10-23 22:41:50 [main] INFO  com.multipedidos.postgres.PostgresApplication - Starting PostgresApplication using Java 17.0.12 with PID 24448 (C:\Users\ronal\OneDrive\Escritorio\MultiPedidos-S.A\Backend\spring-postgres\target\classes started by ronal in C:\Users\ronal\OneDrive\Escritorio\MultiPedidos-S.A\Backend\spring-postgres)
+2025-10-23 22:41:50 [main] DEBUG com.multipedidos.postgres.PostgresApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-10-23 22:41:50 [main] INFO  com.multipedidos.postgres.PostgresApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-23 22:41:51 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-10-23 22:41:51 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-23 22:41:51 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-10-23 22:41:51 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-23 22:41:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-23 22:41:54 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-10-23 22:41:54 [main] INFO  com.multipedidos.postgres.PostgresApplication - Started PostgresApplication in 3.959 seconds (process running for 4.591)
