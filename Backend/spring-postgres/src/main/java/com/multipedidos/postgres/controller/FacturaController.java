@@ -51,4 +51,28 @@ public class FacturaController {
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
+
+    @PutMapping("/{id}")
+    @Operation(summary = "Actualizar una factura", description = "Actualiza los datos de una factura existente y recalcula el total")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Factura actualizada correctamente"),
+            @ApiResponse(responseCode = "404", description = "Factura no encontrada"),
+            @ApiResponse(responseCode = "400", description = "Datos invalidos")
+    })
+    public ResponseEntity<Factura> actualizarFactura(@PathVariable Long id, @RequestBody FacturaInput input) {
+        return facturaService.actualizarFactura(id, input)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+
+    @DeleteMapping("/{id}")
+    @Operation(summary = "Eliminar una factura", description = "Elimina una factura del sistema")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "204", description = "Factura eliminada correctamente"),
+            @ApiResponse(responseCode = "404", description = "Factura no encontrada")
+    })
+    public ResponseEntity<Void> eliminarFactura(@PathVariable Long id) {
+        boolean eliminado = facturaService.eliminarFactura(id);
+        return eliminado ? ResponseEntity.noContent().build() : ResponseEntity.notFound().build();
+    }
 }

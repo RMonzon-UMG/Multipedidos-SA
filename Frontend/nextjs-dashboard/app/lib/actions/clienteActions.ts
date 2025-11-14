@@ -2,7 +2,7 @@
 
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
-import { createCliente } from '../api/componenteA';
+import { createCliente, updateCliente, deleteCliente } from '../api/componenteA';
 
 // Crear un nuevo cliente
 export async function createClienteAction(prevState: any, formData: FormData) {
@@ -32,6 +32,50 @@ export async function createClienteAction(prevState: any, formData: FormData) {
   }
 
   // Si llegamos aquí, todo salió bien
+  revalidatePath('/dashboard/clientes');
+  redirect('/dashboard/clientes');
+}
+
+// Actualizar un cliente
+export async function updateClienteAction(id: number, prevState: any, formData: FormData) {
+  const nombre = formData.get('nombre') as string;
+  const correo = formData.get('correo') as string;
+
+  // Validaciones
+  if (!nombre || nombre.trim() === '') {
+    return { error: 'El nombre es requerido' };
+  }
+
+  if (!correo || correo.trim() === '') {
+    return { error: 'El correo es requerido' };
+  }
+
+  // Validar formato de correo
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(correo)) {
+    return { error: 'El correo no tiene un formato válido' };
+  }
+
+  try {
+    await updateCliente(id, { nombre, correo });
+  } catch (error) {
+    console.error('Error al actualizar cliente:', error);
+    return { error: 'Error al actualizar el cliente. Verifica que el microservicio esté corriendo.' };
+  }
+
+  revalidatePath('/dashboard/clientes');
+  redirect('/dashboard/clientes');
+}
+
+// Eliminar un cliente
+export async function deleteClienteAction(id: number) {
+  try {
+    await deleteCliente(id);
+  } catch (error) {
+    console.error('Error al eliminar cliente:', error);
+    return { error: 'Error al eliminar el cliente.' };
+  }
+
   revalidatePath('/dashboard/clientes');
   redirect('/dashboard/clientes');
 }

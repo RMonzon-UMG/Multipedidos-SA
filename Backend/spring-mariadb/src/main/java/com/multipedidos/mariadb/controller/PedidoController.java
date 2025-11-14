@@ -57,4 +57,28 @@ public class PedidoController {
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
+
+    @PutMapping("/{id}")
+    @Operation(summary = "Actualizar un pedido", description = "Actualiza los datos de un pedido existente y recalcula el total con IVA")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Pedido actualizado correctamente"),
+            @ApiResponse(responseCode = "404", description = "Pedido no encontrado"),
+            @ApiResponse(responseCode = "400", description = "Datos invalidos")
+    })
+    public ResponseEntity<Pedido> actualizarPedido(@PathVariable Long id, @RequestBody PedidoInput input) {
+        return pedidoService.actualizarPedido(id, input)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+
+    @DeleteMapping("/{id}")
+    @Operation(summary = "Eliminar un pedido", description = "Elimina un pedido del sistema")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "204", description = "Pedido eliminado correctamente"),
+            @ApiResponse(responseCode = "404", description = "Pedido no encontrado")
+    })
+    public ResponseEntity<Void> eliminarPedido(@PathVariable Long id) {
+        boolean eliminado = pedidoService.eliminarPedido(id);
+        return eliminado ? ResponseEntity.noContent().build() : ResponseEntity.notFound().build();
+    }
 }

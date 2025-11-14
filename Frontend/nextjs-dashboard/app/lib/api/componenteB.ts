@@ -55,6 +55,27 @@ export async function getProveedores(): Promise<Proveedor[]> {
 }
 
 /**
+ * Obtener un proveedor por ID
+ */
+export async function getProveedorById(id: number): Promise<Proveedor> {
+  try {
+    const response = await fetch(`${COMPONENTE_B_URL}/proveedores/${id}`, {
+      cache: 'no-store',
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error al obtener proveedor ${id}: ${response.status}`);
+    }
+
+    const proveedor = await response.json();
+    return proveedor;
+  } catch (error) {
+    console.error(`Error en getProveedorById(${id}):`, error);
+    throw error;
+  }
+}
+
+/**
  * Crear un proveedor
  */
 export async function createProveedor(data: ProveedorInput): Promise<Proveedor> {
@@ -73,6 +94,47 @@ export async function createProveedor(data: ProveedorInput): Promise<Proveedor> 
     return nuevoProveedor;
   } catch (error) {
     console.error('Error en createProveedor:', error);
+    throw error;
+  }
+}
+
+/**
+ * Actualizar un proveedor
+ */
+export async function updateProveedor(id: number, data: ProveedorInput): Promise<Proveedor> {
+  try {
+    const response = await fetch(`${COMPONENTE_B_URL}/proveedores/${id}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error al actualizar proveedor ${id}: ${response.status}`);
+    }
+
+    const proveedorActualizado = await response.json();
+    return proveedorActualizado;
+  } catch (error) {
+    console.error(`Error en updateProveedor(${id}):`, error);
+    throw error;
+  }
+}
+
+/**
+ * Eliminar un proveedor
+ */
+export async function deleteProveedor(id: number): Promise<void> {
+  try {
+    const response = await fetch(`${COMPONENTE_B_URL}/proveedores/${id}`, {
+      method: 'DELETE',
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error al eliminar proveedor ${id}: ${response.status}`);
+    }
+  } catch (error) {
+    console.error(`Error en deleteProveedor(${id}):`, error);
     throw error;
   }
 }
@@ -140,6 +202,47 @@ export async function createFactura(data: FacturaInput): Promise<Factura> {
     return nuevaFactura;
   } catch (error) {
     console.error('Error en createFactura:', error);
+    throw error;
+  }
+}
+
+/**
+ * Actualizar una factura
+ */
+export async function updateFactura(id: number, data: FacturaInput): Promise<Factura> {
+  try {
+    const response = await fetch(`${COMPONENTE_B_URL}/facturas/${id}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error al actualizar factura ${id}: ${response.status}`);
+    }
+
+    const facturaActualizada = await response.json();
+    return facturaActualizada;
+  } catch (error) {
+    console.error(`Error en updateFactura(${id}):`, error);
+    throw error;
+  }
+}
+
+/**
+ * Eliminar una factura
+ */
+export async function deleteFactura(id: number): Promise<void> {
+  try {
+    const response = await fetch(`${COMPONENTE_B_URL}/facturas/${id}`, {
+      method: 'DELETE',
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error al eliminar factura ${id}: ${response.status}`);
+    }
+  } catch (error) {
+    console.error(`Error en deleteFactura(${id}):`, error);
     throw error;
   }
 }

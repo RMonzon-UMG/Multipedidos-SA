@@ -9,6 +9,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -37,5 +38,41 @@ public class ProveedorController {
     @ApiResponse(responseCode = "200", description = "Lista de proveedores")
     public List<Proveedor> listarProveedores() {
         return facturaService.listarProveedores();
+    }
+
+    @GetMapping("/{id}")
+    @Operation(summary = "Obtener un proveedor por ID", description = "Busca un proveedor especifico por su ID")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Proveedor encontrado"),
+            @ApiResponse(responseCode = "404", description = "Proveedor no encontrado")
+    })
+    public ResponseEntity<Proveedor> obtenerProveedorPorId(@PathVariable Long id) {
+        return facturaService.obtenerProveedorPorId(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+
+    @PutMapping("/{id}")
+    @Operation(summary = "Actualizar un proveedor", description = "Actualiza los datos de un proveedor existente")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Proveedor actualizado correctamente"),
+            @ApiResponse(responseCode = "404", description = "Proveedor no encontrado"),
+            @ApiResponse(responseCode = "400", description = "Datos invalidos")
+    })
+    public ResponseEntity<Proveedor> actualizarProveedor(@PathVariable Long id, @RequestBody ProveedorInput input) {
+        return facturaService.actualizarProveedor(id, input)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+
+    @DeleteMapping("/{id}")
+    @Operation(summary = "Eliminar un proveedor", description = "Elimina un proveedor del sistema")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "204", description = "Proveedor eliminado correctamente"),
+            @ApiResponse(responseCode = "404", description = "Proveedor no encontrado")
+    })
+    public ResponseEntity<Void> eliminarProveedor(@PathVariable Long id) {
+        boolean eliminado = facturaService.eliminarProveedor(id);
+        return eliminado ? ResponseEntity.noContent().build() : ResponseEntity.notFound().build();
     }
 }

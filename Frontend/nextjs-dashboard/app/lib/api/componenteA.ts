@@ -98,6 +98,47 @@ export async function createCliente(data: ClienteInput): Promise<Cliente> {
   }
 }
 
+/**
+ * Actualizar un cliente
+ */
+export async function updateCliente(id: number, data: ClienteInput): Promise<Cliente> {
+  try {
+    const response = await fetch(`${COMPONENTE_A_URL}/clientes/${id}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error al actualizar cliente ${id}: ${response.status}`);
+    }
+
+    const clienteActualizado = await response.json();
+    return clienteActualizado;
+  } catch (error) {
+    console.error(`Error en updateCliente(${id}):`, error);
+    throw error;
+  }
+}
+
+/**
+ * Eliminar un cliente
+ */
+export async function deleteCliente(id: number): Promise<void> {
+  try {
+    const response = await fetch(`${COMPONENTE_A_URL}/clientes/${id}`, {
+      method: 'DELETE',
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error al eliminar cliente ${id}: ${response.status}`);
+    }
+  } catch (error) {
+    console.error(`Error en deleteCliente(${id}):`, error);
+    throw error;
+  }
+}
+
 // ============== PEDIDOS ==============
 
 /**
@@ -182,6 +223,47 @@ export async function createPedido(data: PedidoInput): Promise<Pedido> {
     return nuevoPedido;
   } catch (error) {
     console.error('Error en createPedido:', error);
+    throw error;
+  }
+}
+
+/**
+ * Actualizar un pedido
+ */
+export async function updatePedido(id: number, data: PedidoInput): Promise<Pedido> {
+  try {
+    const response = await fetch(`${COMPONENTE_A_URL}/pedidos/${id}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error al actualizar pedido ${id}: ${response.status}`);
+    }
+
+    const pedidoActualizado = await response.json();
+    return pedidoActualizado;
+  } catch (error) {
+    console.error(`Error en updatePedido(${id}):`, error);
+    throw error;
+  }
+}
+
+/**
+ * Eliminar un pedido
+ */
+export async function deletePedido(id: number): Promise<void> {
+  try {
+    const response = await fetch(`${COMPONENTE_A_URL}/pedidos/${id}`, {
+      method: 'DELETE',
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error al eliminar pedido ${id}: ${response.status}`);
+    }
+  } catch (error) {
+    console.error(`Error en deletePedido(${id}):`, error);
     throw error;
   }
 }

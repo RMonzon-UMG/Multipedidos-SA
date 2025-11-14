@@ -64,7 +64,7 @@ export default async function Page() {
             <div className="flex items-center">
               <h3 className="text-sm font-medium text-purple-700">Total Ventas</h3>
             </div>
-            <p className="text-3xl font-bold text-purple-900">${totalVentas.toFixed(2)}</p>
+            <p className="text-3xl font-bold text-purple-900">Q{totalVentas.toFixed(2)}</p>
           </div>
         </div>
 
@@ -80,7 +80,7 @@ export default async function Page() {
                     Cliente: {clienteMap.get(pedido.clienteId) || `#${pedido.clienteId}`}
                   </p>
                 </div>
-                <p className="text-sm font-semibold text-green-600">${pedido.total.toFixed(2)}</p>
+                <p className="text-sm font-semibold text-green-600">Q{pedido.total.toFixed(2)}</p>
               </div>
             ))}
           </div>
@@ -111,7 +111,7 @@ export default async function Page() {
             <div className="flex items-center">
               <h3 className="text-sm font-medium text-indigo-700">Total Facturación</h3>
             </div>
-            <p className="text-3xl font-bold text-indigo-900">${totalFacturacion.toFixed(2)}</p>
+            <p className="text-3xl font-bold text-indigo-900">Q{totalFacturacion.toFixed(2)}</p>
           </div>
         </div>
 
@@ -127,7 +127,7 @@ export default async function Page() {
                     Proveedor: {proveedorMap.get(factura.proveedorId) || `#${factura.proveedorId}`}
                   </p>
                 </div>
-                <p className="text-sm font-semibold text-green-600">${factura.totalFactura.toFixed(2)}</p>
+                <p className="text-sm font-semibold text-green-600">Q{factura.totalFactura.toFixed(2)}</p>
               </div>
             ))}
           </div>

@@ -81,4 +81,55 @@ public class FacturaService {
         log.info("Consultando pedidos del cliente {} desde Componente A", clienteId);
         return componenteAClient.getPedidosByClienteId(clienteId);
     }
+
+    public Optional<Proveedor> actualizarProveedor(Long id, ProveedorInput input) {
+        log.info("Actualizando proveedor con ID: {}", id);
+        return proveedorRepository.findById(id).map(proveedor -> {
+            proveedor.setNombre(input.getNombre());
+            proveedor.setCorreo(input.getCorreo());
+            Proveedor proveedorActualizado = proveedorRepository.save(proveedor);
+            log.info("Proveedor actualizado con ID: {}", proveedorActualizado.getId());
+            return proveedorActualizado;
+        });
+    }
+
+    public boolean eliminarProveedor(Long id) {
+        log.info("Eliminando proveedor con ID: {}", id);
+        if (proveedorRepository.existsById(id)) {
+            proveedorRepository.deleteById(id);
+            log.info("Proveedor eliminado con ID: {}", id);
+            return true;
+        }
+        log.warn("Proveedor no encontrado con ID: {}", id);
+        return false;
+    }
+
+    public Optional<Factura> actualizarFactura(Long id, FacturaInput input) {
+        log.info("Actualizando factura con ID: {}", id);
+        return facturaRepository.findById(id).map(factura -> {
+            double totalFactura = input.getPedidos().stream()
+                    .mapToDouble(PedidoReferencia::getTotal)
+                    .sum();
+            log.debug("Total de factura recalculado: {}", totalFactura);
+
+            factura.setProveedorId(input.getProveedorId());
+            factura.setPedidos(input.getPedidos());
+            factura.setTotalFactura(totalFactura);
+
+            Factura facturaActualizada = facturaRepository.save(factura);
+            log.info("Factura actualizada con ID: {} y total: {}", facturaActualizada.getId(), facturaActualizada.getTotalFactura());
+            return facturaActualizada;
+        });
+    }
+
+    public boolean eliminarFactura(Long id) {
+        log.info("Eliminando factura con ID: {}", id);
+        if (facturaRepository.existsById(id)) {
+            facturaRepository.deleteById(id);
+            log.info("Factura eliminada con ID: {}", id);
+            return true;
+        }
+        log.warn("Factura no encontrada con ID: {}", id);
+        return false;
+    }
 }
