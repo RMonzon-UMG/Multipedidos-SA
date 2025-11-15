@@ -1,87 +1,71 @@
-2025-11-13 23:11:06 [main] INFO  com.multipedidos.postgres.PostgresApplication - Starting PostgresApplication using Java 17.0.12 with PID 21488 (C:\Users\ronal\OneDrive\Escritorio\MultiPedidos-S.A\Backend\spring-postgres\target\classes started by ronal in C:\Users\ronal\OneDrive\Escritorio\MultiPedidos-S.A\Backend\spring-postgres)
-2025-11-13 23:11:06 [main] DEBUG com.multipedidos.postgres.PostgresApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
-2025-11-13 23:11:06 [main] INFO  com.multipedidos.postgres.PostgresApplication - No active profile set, falling back to 1 default profile: "default"
-2025-11-13 23:11:07 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2025-11-13 23:11:07 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-11-13 23:11:07 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
-2025-11-13 23:11:07 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-11-13 23:11:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-11-13 23:11:08 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2b9ecd05
-2025-11-13 23:11:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-11-13 23:11:09 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2025-11-13 23:11:09 [main] INFO  com.multipedidos.postgres.PostgresApplication - Started PostgresApplication in 3.959 seconds (process running for 4.588)
-2025-11-13 23:12:32 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-13 23:12:32 [http-nio-8082-exec-1] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:12:32 [http-nio-8082-exec-2] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:13:15 [http-nio-8082-exec-3] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:13:15 [http-nio-8082-exec-4] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:13:20 [http-nio-8082-exec-5] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:13:20 [http-nio-8082-exec-6] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:14:08 [http-nio-8082-exec-7] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:14:08 [http-nio-8082-exec-8] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:15:48 [http-nio-8082-exec-1] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:15:56 [http-nio-8082-exec-2] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:16:06 [http-nio-8082-exec-3] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:16:09 [http-nio-8082-exec-4] DEBUG com.multipedidos.postgres.service.FacturaService - Obteniendo proveedor con ID: 4
-2025-11-13 23:16:15 [http-nio-8082-exec-5] INFO  com.multipedidos.postgres.service.FacturaService - Actualizando proveedor con ID: 4
-2025-11-13 23:16:15 [http-nio-8082-exec-5] INFO  com.multipedidos.postgres.service.FacturaService - Proveedor actualizado con ID: 4
-2025-11-13 23:16:15 [http-nio-8082-exec-6] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:16:21 [http-nio-8082-exec-7] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:16:25 [http-nio-8082-exec-8] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:16:27 [http-nio-8082-exec-9] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:16:27 [http-nio-8082-exec-10] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:16:39 [http-nio-8082-exec-1] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:16:39 [http-nio-8082-exec-2] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:16:59 [http-nio-8082-exec-3] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:16:59 [http-nio-8082-exec-4] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:19:50 [http-nio-8082-exec-7] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:19:50 [http-nio-8082-exec-8] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:19:56 [http-nio-8082-exec-9] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:19:56 [http-nio-8082-exec-10] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:20:03 [http-nio-8082-exec-1] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:20:03 [http-nio-8082-exec-2] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:20:09 [http-nio-8082-exec-3] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:20:09 [http-nio-8082-exec-4] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:22:25 [http-nio-8082-exec-7] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:22:49 [http-nio-8082-exec-8] INFO  com.multipedidos.postgres.service.FacturaService - Creando proveedor: Tiendas MAX
-2025-11-13 23:22:49 [http-nio-8082-exec-8] INFO  com.multipedidos.postgres.service.FacturaService - Proveedor creado con ID: 6
-2025-11-13 23:22:49 [http-nio-8082-exec-9] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:23:15 [http-nio-8082-exec-10] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:23:15 [http-nio-8082-exec-1] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:23:20 [http-nio-8082-exec-2] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:23:27 [http-nio-8082-exec-3] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:23:27 [http-nio-8082-exec-4] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:23:35 [http-nio-8082-exec-5] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:23:36 [http-nio-8082-exec-6] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:23:37 [http-nio-8082-exec-7] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:23:39 [http-nio-8082-exec-8] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:23:39 [http-nio-8082-exec-9] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:24:16 [http-nio-8082-exec-10] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:24:16 [http-nio-8082-exec-1] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:24:28 [http-nio-8082-exec-2] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:24:28 [http-nio-8082-exec-3] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:24:29 [http-nio-8082-exec-4] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:24:29 [http-nio-8082-exec-5] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:24:29 [http-nio-8082-exec-6] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:24:29 [http-nio-8082-exec-7] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:24:29 [http-nio-8082-exec-8] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:24:29 [http-nio-8082-exec-9] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:24:29 [http-nio-8082-exec-10] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:24:29 [http-nio-8082-exec-1] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:24:29 [http-nio-8082-exec-2] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:24:29 [http-nio-8082-exec-3] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:24:29 [http-nio-8082-exec-4] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:24:29 [http-nio-8082-exec-5] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:24:30 [http-nio-8082-exec-6] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:24:30 [http-nio-8082-exec-7] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:24:30 [http-nio-8082-exec-8] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:24:30 [http-nio-8082-exec-9] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:24:30 [http-nio-8082-exec-10] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:24:30 [http-nio-8082-exec-1] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:24:30 [http-nio-8082-exec-2] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:24:30 [http-nio-8082-exec-3] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:24:31 [http-nio-8082-exec-4] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:24:31 [http-nio-8082-exec-5] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
-2025-11-13 23:26:27 [http-nio-8082-exec-7] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 166 ms
-2025-11-13 23:26:53 [http-nio-8082-exec-8] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
-2025-11-13 23:26:53 [http-nio-8082-exec-9] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 06:46:43 [main] INFO  com.multipedidos.postgres.PostgresApplication - Starting PostgresApplication using Java 17.0.12 with PID 24724 (C:\Users\ronal\OneDrive\Escritorio\MultiPedidos-S.A\Backend\spring-postgres\target\classes started by ronal in C:\Users\ronal\OneDrive\Escritorio\MultiPedidos-S.A\Backend\spring-postgres)
+2025-11-15 06:46:43 [main] DEBUG com.multipedidos.postgres.PostgresApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-15 06:46:43 [main] INFO  com.multipedidos.postgres.PostgresApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-15 06:46:44 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-11-15 06:46:44 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-15 06:46:44 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-15 06:46:44 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-15 06:46:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-15 06:46:45 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@34a33343
+2025-11-15 06:46:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-15 06:46:47 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-11-15 06:46:47 [main] INFO  com.multipedidos.postgres.PostgresApplication - Started PostgresApplication in 4.776 seconds (process running for 5.357)
+2025-11-15 06:46:51 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-15 06:46:51 [http-nio-8082-exec-1] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 06:46:51 [http-nio-8082-exec-2] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 06:46:51 [http-nio-8082-exec-3] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 06:46:51 [http-nio-8082-exec-4] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 07:17:22 [http-nio-8082-exec-10] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 185 ms
+2025-11-15 07:19:50 [http-nio-8082-exec-3] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 07:19:50 [http-nio-8082-exec-4] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 07:19:59 [http-nio-8082-exec-5] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 07:19:59 [http-nio-8082-exec-6] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 07:20:10 [http-nio-8082-exec-7] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 07:20:10 [http-nio-8082-exec-8] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 07:20:14 [http-nio-8082-exec-9] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 07:20:14 [http-nio-8082-exec-10] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 07:20:16 [http-nio-8082-exec-1] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 07:20:16 [http-nio-8082-exec-2] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 07:20:31 [http-nio-8082-exec-3] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 07:20:31 [http-nio-8082-exec-4] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 07:20:34 [http-nio-8082-exec-5] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 07:20:34 [http-nio-8082-exec-6] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 07:20:34 [http-nio-8082-exec-7] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 07:20:40 [http-nio-8082-exec-8] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 07:20:40 [http-nio-8082-exec-9] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 07:20:40 [http-nio-8082-exec-10] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 07:20:42 [http-nio-8082-exec-1] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 07:20:43 [http-nio-8082-exec-2] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 07:20:43 [http-nio-8082-exec-3] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 07:20:51 [http-nio-8082-exec-4] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 07:20:51 [http-nio-8082-exec-5] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 07:20:54 [http-nio-8082-exec-6] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 07:20:54 [http-nio-8082-exec-7] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 07:20:57 [http-nio-8082-exec-8] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 07:20:57 [http-nio-8082-exec-9] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 07:30:12 [http-nio-8082-exec-2] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 07:30:12 [http-nio-8082-exec-3] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 07:30:12 [http-nio-8082-exec-4] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 07:30:12 [http-nio-8082-exec-5] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 08:02:26 [http-nio-8082-exec-8] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 08:02:26 [http-nio-8082-exec-9] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 08:02:26 [http-nio-8082-exec-10] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 08:02:28 [http-nio-8082-exec-1] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 08:02:28 [http-nio-8082-exec-2] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 08:02:28 [http-nio-8082-exec-3] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 08:02:29 [http-nio-8082-exec-4] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 08:02:29 [http-nio-8082-exec-5] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 08:05:26 [http-nio-8082-exec-8] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 08:05:26 [http-nio-8082-exec-9] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 08:05:26 [http-nio-8082-exec-10] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 08:05:26 [http-nio-8082-exec-1] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 08:07:55 [http-nio-8082-exec-4] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 08:07:55 [http-nio-8082-exec-5] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 08:08:12 [http-nio-8082-exec-6] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 08:08:13 [http-nio-8082-exec-7] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 08:08:26 [http-nio-8082-exec-8] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 08:08:27 [http-nio-8082-exec-9] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 08:08:27 [http-nio-8082-exec-10] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 08:08:46 [http-nio-8082-exec-1] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas
+2025-11-15 08:08:46 [http-nio-8082-exec-2] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todos los proveedores
+2025-11-15 08:08:46 [http-nio-8082-exec-3] DEBUG com.multipedidos.postgres.service.FacturaService - Listando todas las facturas

@@ -1,106 +1,87 @@
-2025-11-13 23:10:58 [main] INFO  com.multipedidos.mariadb.MariaDBApplication - Starting MariaDBApplication using Java 17.0.12 with PID 22024 (C:\Users\ronal\OneDrive\Escritorio\MultiPedidos-S.A\Backend\spring-mariadb\target\classes started by ronal in C:\Users\ronal\OneDrive\Escritorio\MultiPedidos-S.A\Backend\spring-mariadb)
-2025-11-13 23:10:58 [main] DEBUG com.multipedidos.mariadb.MariaDBApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
-2025-11-13 23:10:58 [main] INFO  com.multipedidos.mariadb.MariaDBApplication - No active profile set, falling back to 1 default profile: "default"
-2025-11-13 23:11:00 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
-2025-11-13 23:11:00 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-11-13 23:11:00 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
-2025-11-13 23:11:00 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-11-13 23:11:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-11-13 23:11:00 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@7769d9b6
-2025-11-13 23:11:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-11-13 23:11:02 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
-2025-11-13 23:11:02 [main] INFO  com.multipedidos.mariadb.MariaDBApplication - Started MariaDBApplication in 4.238 seconds (process running for 4.985)
-2025-11-13 23:12:31 [http-nio-8081-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-13 23:12:31 [http-nio-8081-exec-1] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:12:31 [http-nio-8081-exec-2] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:12:38 [http-nio-8081-exec-3] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:13:11 [http-nio-8081-exec-4] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:13:15 [http-nio-8081-exec-6] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:13:15 [http-nio-8081-exec-5] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:13:20 [http-nio-8081-exec-7] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:13:20 [http-nio-8081-exec-8] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:14:08 [http-nio-8081-exec-9] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:14:08 [http-nio-8081-exec-10] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:14:17 [http-nio-8081-exec-1] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:14:32 [http-nio-8081-exec-2] INFO  com.multipedidos.mariadb.service.PedidoService - Creando cliente: Domigo
-2025-11-13 23:14:32 [http-nio-8081-exec-2] INFO  com.multipedidos.mariadb.service.PedidoService - Cliente creado con ID: 14
-2025-11-13 23:14:33 [http-nio-8081-exec-3] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:14:47 [http-nio-8081-exec-4] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:15:06 [http-nio-8081-exec-6] DEBUG com.multipedidos.mariadb.service.PedidoService - Obteniendo pedido con ID: 2
-2025-11-13 23:15:06 [http-nio-8081-exec-5] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:15:23 [http-nio-8081-exec-7] INFO  com.multipedidos.mariadb.service.PedidoService - Actualizando pedido con ID: 2
-2025-11-13 23:15:24 [http-nio-8081-exec-7] DEBUG com.multipedidos.mariadb.service.PedidoService - Subtotal recalculado: 163.0
-2025-11-13 23:15:24 [http-nio-8081-exec-7] DEBUG com.multipedidos.mariadb.service.PedidoService - Total con IVA recalculado (12%): 182.56000000000003
-2025-11-13 23:15:24 [http-nio-8081-exec-7] INFO  com.multipedidos.mariadb.service.PedidoService - Pedido actualizado con ID: 2 y total: 182.56000000000003
-2025-11-13 23:15:24 [http-nio-8081-exec-8] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:15:33 [http-nio-8081-exec-9] DEBUG com.multipedidos.mariadb.service.PedidoService - Obteniendo pedido con ID: 9
-2025-11-13 23:15:33 [http-nio-8081-exec-10] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:15:39 [http-nio-8081-exec-1] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:15:46 [http-nio-8081-exec-2] INFO  com.multipedidos.mariadb.service.PedidoService - Eliminando pedido con ID: 3
-2025-11-13 23:15:46 [http-nio-8081-exec-2] INFO  com.multipedidos.mariadb.service.PedidoService - Pedido eliminado con ID: 3
-2025-11-13 23:15:46 [http-nio-8081-exec-3] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:15:46 [http-nio-8081-exec-4] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:16:03 [http-nio-8081-exec-5] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:16:27 [http-nio-8081-exec-6] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:16:27 [http-nio-8081-exec-7] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:16:33 [http-nio-8081-exec-8] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:16:34 [http-nio-8081-exec-9] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:16:39 [http-nio-8081-exec-10] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:16:39 [http-nio-8081-exec-1] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:16:41 [http-nio-8081-exec-2] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:16:43 [http-nio-8081-exec-3] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:16:56 [http-nio-8081-exec-4] INFO  com.multipedidos.mariadb.service.PedidoService - Creando pedido para cliente ID: 12
-2025-11-13 23:16:56 [http-nio-8081-exec-4] DEBUG com.multipedidos.mariadb.service.PedidoService - Subtotal calculado: 87.0
-2025-11-13 23:16:56 [http-nio-8081-exec-4] DEBUG com.multipedidos.mariadb.service.PedidoService - Total con IVA (12%): 97.44000000000001
-2025-11-13 23:16:56 [http-nio-8081-exec-4] INFO  com.multipedidos.mariadb.service.PedidoService - Pedido creado con ID: 11 y total: 97.44000000000001
-2025-11-13 23:16:56 [http-nio-8081-exec-5] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:16:59 [http-nio-8081-exec-6] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:16:59 [http-nio-8081-exec-7] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:19:50 [http-nio-8081-exec-10] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:19:50 [http-nio-8081-exec-1] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:19:56 [http-nio-8081-exec-2] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:19:56 [http-nio-8081-exec-3] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:20:03 [http-nio-8081-exec-4] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:20:03 [http-nio-8081-exec-5] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:20:09 [http-nio-8081-exec-6] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:20:09 [http-nio-8081-exec-7] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:23:14 [http-nio-8081-exec-10] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:23:15 [http-nio-8081-exec-1] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:23:15 [http-nio-8081-exec-2] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:23:27 [http-nio-8081-exec-3] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:23:27 [http-nio-8081-exec-4] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:23:33 [http-nio-8081-exec-5] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:23:35 [http-nio-8081-exec-6] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:23:38 [http-nio-8081-exec-7] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:23:38 [http-nio-8081-exec-8] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:23:39 [http-nio-8081-exec-9] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:23:39 [http-nio-8081-exec-10] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:24:16 [http-nio-8081-exec-1] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:24:16 [http-nio-8081-exec-2] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:24:28 [http-nio-8081-exec-3] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:24:28 [http-nio-8081-exec-4] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:24:29 [http-nio-8081-exec-5] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:24:29 [http-nio-8081-exec-6] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:24:29 [http-nio-8081-exec-7] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:24:29 [http-nio-8081-exec-8] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:24:29 [http-nio-8081-exec-9] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:24:29 [http-nio-8081-exec-10] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:24:29 [http-nio-8081-exec-1] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:24:29 [http-nio-8081-exec-2] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:24:29 [http-nio-8081-exec-3] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:24:29 [http-nio-8081-exec-4] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:24:29 [http-nio-8081-exec-5] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:24:29 [http-nio-8081-exec-6] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:24:29 [http-nio-8081-exec-7] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:24:29 [http-nio-8081-exec-8] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:24:30 [http-nio-8081-exec-9] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:24:30 [http-nio-8081-exec-10] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:24:30 [http-nio-8081-exec-1] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:24:30 [http-nio-8081-exec-2] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:24:30 [http-nio-8081-exec-3] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:24:30 [http-nio-8081-exec-4] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:24:31 [http-nio-8081-exec-5] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:24:31 [http-nio-8081-exec-6] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
-2025-11-13 23:26:51 [http-nio-8081-exec-9] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:26:53 [http-nio-8081-exec-10] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
-2025-11-13 23:26:53 [http-nio-8081-exec-1] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 06:46:43 [main] INFO  com.multipedidos.mariadb.MariaDBApplication - Starting MariaDBApplication using Java 17.0.12 with PID 24732 (C:\Users\ronal\OneDrive\Escritorio\MultiPedidos-S.A\Backend\spring-mariadb\target\classes started by ronal in C:\Users\ronal\OneDrive\Escritorio\MultiPedidos-S.A\Backend\spring-mariadb)
+2025-11-15 06:46:43 [main] DEBUG com.multipedidos.mariadb.MariaDBApplication - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-15 06:46:43 [main] INFO  com.multipedidos.mariadb.MariaDBApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-15 06:46:44 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-11-15 06:46:44 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-15 06:46:44 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-15 06:46:44 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-15 06:46:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-15 06:46:45 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@3b33fff9
+2025-11-15 06:46:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-15 06:46:47 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-11-15 06:46:47 [main] INFO  com.multipedidos.mariadb.MariaDBApplication - Started MariaDBApplication in 4.682 seconds (process running for 5.243)
+2025-11-15 06:46:50 [http-nio-8081-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-15 06:46:50 [http-nio-8081-exec-1] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 06:46:51 [http-nio-8081-exec-2] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 06:46:51 [http-nio-8081-exec-3] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 06:46:51 [http-nio-8081-exec-4] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:17:20 [http-nio-8081-exec-10] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 211 ms
+2025-11-15 07:19:50 [http-nio-8081-exec-3] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:19:50 [http-nio-8081-exec-4] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:19:50 [http-nio-8081-exec-5] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:19:57 [http-nio-8081-exec-6] INFO  com.multipedidos.mariadb.service.PedidoService - Eliminando cliente con ID: 2
+2025-11-15 07:19:57 [http-nio-8081-exec-6] INFO  com.multipedidos.mariadb.service.PedidoService - Cliente eliminado con ID: 2
+2025-11-15 07:19:57 [http-nio-8081-exec-7] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:19:57 [http-nio-8081-exec-8] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:19:59 [http-nio-8081-exec-9] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:19:59 [http-nio-8081-exec-10] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:20:10 [http-nio-8081-exec-1] INFO  com.multipedidos.mariadb.service.PedidoService - Creando cliente: Walter
+2025-11-15 07:20:10 [http-nio-8081-exec-1] INFO  com.multipedidos.mariadb.service.PedidoService - Cliente creado con ID: 15
+2025-11-15 07:20:10 [http-nio-8081-exec-2] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:20:10 [http-nio-8081-exec-3] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:20:10 [http-nio-8081-exec-4] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:20:13 [http-nio-8081-exec-5] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:20:13 [http-nio-8081-exec-6] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:20:14 [http-nio-8081-exec-7] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:20:16 [http-nio-8081-exec-8] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:20:16 [http-nio-8081-exec-9] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:20:16 [http-nio-8081-exec-10] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:20:30 [http-nio-8081-exec-1] INFO  com.multipedidos.mariadb.service.PedidoService - Creando pedido para cliente ID: 15
+2025-11-15 07:20:30 [http-nio-8081-exec-1] DEBUG com.multipedidos.mariadb.service.PedidoService - Subtotal calculado: 50.0
+2025-11-15 07:20:30 [http-nio-8081-exec-1] DEBUG com.multipedidos.mariadb.service.PedidoService - Total con IVA (12%): 56.00000000000001
+2025-11-15 07:20:30 [http-nio-8081-exec-1] INFO  com.multipedidos.mariadb.service.PedidoService - Pedido creado con ID: 12 y total: 56.00000000000001
+2025-11-15 07:20:31 [http-nio-8081-exec-2] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:20:31 [http-nio-8081-exec-3] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:20:31 [http-nio-8081-exec-4] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:20:34 [http-nio-8081-exec-5] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:20:34 [http-nio-8081-exec-6] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:20:40 [http-nio-8081-exec-7] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:20:40 [http-nio-8081-exec-8] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:20:42 [http-nio-8081-exec-9] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:20:42 [http-nio-8081-exec-10] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:20:43 [http-nio-8081-exec-1] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:20:51 [http-nio-8081-exec-2] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:20:51 [http-nio-8081-exec-3] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:20:51 [http-nio-8081-exec-4] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:20:54 [http-nio-8081-exec-5] DEBUG com.multipedidos.mariadb.service.PedidoService - Obteniendo pedido con ID: 2
+2025-11-15 07:20:54 [http-nio-8081-exec-6] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:20:54 [http-nio-8081-exec-7] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:20:54 [http-nio-8081-exec-8] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:20:57 [http-nio-8081-exec-9] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:20:57 [http-nio-8081-exec-10] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:20:57 [http-nio-8081-exec-1] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:30:12 [http-nio-8081-exec-4] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:30:12 [http-nio-8081-exec-5] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 07:30:12 [http-nio-8081-exec-6] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 07:30:12 [http-nio-8081-exec-7] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 08:02:26 [http-nio-8081-exec-10] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 08:02:26 [http-nio-8081-exec-1] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 08:02:28 [http-nio-8081-exec-2] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 08:02:28 [http-nio-8081-exec-3] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 08:02:29 [http-nio-8081-exec-4] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 08:02:29 [http-nio-8081-exec-5] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 08:02:29 [http-nio-8081-exec-6] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 08:05:26 [http-nio-8081-exec-9] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 08:05:26 [http-nio-8081-exec-10] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 08:05:26 [http-nio-8081-exec-1] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 08:05:26 [http-nio-8081-exec-2] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 08:07:55 [http-nio-8081-exec-5] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 08:07:55 [http-nio-8081-exec-6] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 08:07:55 [http-nio-8081-exec-7] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 08:08:12 [http-nio-8081-exec-8] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 08:08:12 [http-nio-8081-exec-9] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 08:08:12 [http-nio-8081-exec-10] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 08:08:27 [http-nio-8081-exec-1] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 08:08:27 [http-nio-8081-exec-2] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
+2025-11-15 08:08:46 [http-nio-8081-exec-3] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los clientes
+2025-11-15 08:08:46 [http-nio-8081-exec-4] DEBUG com.multipedidos.mariadb.service.PedidoService - Listando todos los pedidos
